@@ -1,0 +1,652 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; background:#fff; color:#000; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+button                         { cursor: pointer; padding: 0 }
+select, input, textarea,button { font:12px Tahoma, sans-serif; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+/*a:link, a:visited              { !*font:12px Tahoma, sans-serif;*! color:#000; text-decoration:underline; }*/
+a:hover                        { text-decoration:none; }
+a {
+	text-decoration: none;
+	transition: 0.3s all ease-out;
+}
+
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.overflow                      { overflow: hidden}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: "Bold";
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Light";
+	src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Regular";
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "ExtraBold";
+	src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Italic";
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "SemiBold";
+	src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+header{
+	padding-top: 100px;
+}
+header h2{
+	font-size: 30px;
+	font-family: SemiBold,sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	color: #3b434c;
+}
+
+header p {
+	max-width: 470px;
+	margin: 0 auto 65px;
+	font-size: 15px;
+	font-family: Regular,sans-serif;
+	line-height: 25px;
+}
+
+section{
+	text-align: center;
+}
+.orange{
+	color: #f7600e;
+}
+
+.button-a{
+	display: inline-block;
+	line-height: 50px;
+	width: 210px;
+	padding: 0 15px;
+	font-size: 15px;
+	font-family: SemiBold,sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	border: 1px solid #65696f;
+	border-radius: 10px;
+}
+
+.button-a:hover{
+	background-color: #f7600e;
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+/*.................Welcome section............*/
+.welcome-section{
+	position: relative;
+	height: 100vh;
+	background: url("../images/header-background.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.welcome-section header{
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+div.logo{
+	overflow: hidden;
+	float: left;
+	width: 160px;
+	height: 20px;
+}
+
+.welcome-section header h1{
+	float: left;
+}
+.welcome-section header nav{
+	float:right;
+}
+.welcome-section nav p{
+	float: left;
+	font-size: 16px;
+	font-family: Regular,sans-serif;
+	padding-right: 20px;
+	color: white;
+}
+.welcome-section nav button{
+	width: 26px;
+	height: 20px;
+	background: url("../images/menu-btn.png");
+	border: 0;
+}
+
+.welcome-section nav button:hover {
+	/*transform:scale(1.25);*/
+	transform: rotate(-180deg);
+	transition: 0.3s all ease-out;
+}
+
+.welcome-block{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.welcome-block h2{
+	font-family: ExtraBold,sans-serif;
+	font-size: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.welcome-block p {
+	display: inline-block;
+	width: 650px;
+	line-height: 25px;
+	font-size: 18px;
+	font-family: Regular, sans-serif;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.welcome-block li{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.arrow-down{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background: url("../images/circle-arrow-down.png") center no-repeat;
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	padding-top: 55px;
+	font-size: 14px;
+	color: #fff;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+/*.................What we do............*/
+
+.what-we-do ul{
+	padding-top: 100px ;
+	margin-bottom: 80px;
+}
+
+.what-we-do ul li{
+	display: inline-block;
+	padding-top: 150px;
+	margin: 20px 60px 0 60px;
+	vertical-align: top;
+	width: 151px;
+}
+
+.what-we-do h3{
+	padding: 20px 0;
+	font-size: 16px;
+	font-family: Regular,sans-serif;
+	text-transform: uppercase;
+}
+
+.what-we-do ul li p{
+	font-size: 12px;
+	font-family: Regular,sans-serif;
+	line-height: 20px ;
+}
+
+.what-we-do ul li.print{
+	background: url("../images/print-design-icon.png")  no-repeat;
+ }
+
+.what-we-do ul li.web{
+	 background: url("../images/web-design-icon.png")  no-repeat;
+ }
+
+.what-we-do ul li.app{
+	background: url("../images/apps-design-icon.png")  no-repeat;
+}
+
+.what-we-do ul li.logo{
+	background: url("../images/logo-design-icon.png") no-repeat;
+}
+
+/*.................Subscribe............*/
+
+.subscribe{
+	position: relative;
+	background: url("../images/subscribe-background.jpg") center no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+.subscribe .email{
+	display: inline-block;
+	height: 50px;
+	width: 565px;
+	font-size: 16px;
+	font-family: SemiBold,sans-serif;
+	padding-left: 35px;
+	border: 3px solid transparent;
+	border-radius: 10px;
+}
+
+.subscribe .email:focus{
+	border: 3px solid #f7600e;
+}
+
+.subscribe button{
+	transition: 0.3s all ease-out;
+	margin-left: 30px;
+	background: transparent;
+}
+/*.................Our works............*/
+
+.gallery ul{
+	overflow: hidden;
+}
+
+.gallery li{
+	position: relative;
+	margin: 15px;
+	float: left;
+	width: 360px;
+	height: 360px;
+}
+
+.gallery li h4{
+	font-size: 25px;
+	font-family: SemiBold,sans-serif;
+	padding-top: 90px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	color: #fff;
+ }
+
+.gallery li p{
+	margin: 0 auto;
+	padding-bottom: 30px;
+	font-size: 14px;
+	font-family: Regular,sans-serif;
+	color: #fff;
+	max-width: 270px;
+}
+
+ul.gallery li a{
+	border: 1px solid #fff;
+}
+
+.gallery li a:hover{
+	background-color:  #fff;
+	transition: 0.3s all ease-out;
+	color: #f7600e;
+	border: none;
+}
+
+.gallery div{
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:rgba(247,96,14,.9);
+	border-radius: 10px;
+}
+
+.gallery li:hover div{
+	display: block;
+}
+
+.our-works button{
+	margin: 85px 0 100px 0;
+	color: #3b434c;
+	transition: 0.3s all ease-out;
+	background: transparent;
+	border-color: #d8d9db ;
+}
+
+.our-works button:hover{
+	border: 1px solid transparent;
+	color: #fff;
+}
+
+/*.................Clients slider............*/
+section.clients{
+	background: url("../images/slider-background.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.padding-top {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.clients .slider .photo-wrap{
+	overflow: hidden;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto 30px;
+	border-radius: 50%;
+}
+
+.clients .slider p{
+	font-size: 20px;
+	font-family: Light,sans-serif;
+	font-style: italic;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	max-width: 780px;
+	color: #fff;
+}
+
+.clients .slider h5{
+	font-size: 20px;
+	font-family: Regular,sans-serif;
+	color: #fff;
+}
+
+
+/*.................Our team............*/
+ul.team {
+	margin-bottom: 100px;
+}
+
+ul.team li img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 235px;
+	height: 283px;
+	border-radius: 10px;
+}
+
+ul.team li.team-li {
+	display: inline-block;
+	width: 260px;
+	margin: auto 14px;
+	-ms-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+ul.team li.team-li:hover{
+	-ms-filter: none;
+	-webkit-filter: none;
+	filter: none;
+}
+
+ul.team li.team-li:hover img{
+	transform: scale(1.15) translateY(-19px);
+	border-radius: 10px 10px 0 0 ;
+	border-bottom: 7px solid #f7600e;
+	transition: 0.3s all ease-out;
+}
+
+ul.team li h4{
+	padding-top: 25px;
+	font-size: 25px;
+	font-family: SemiBold,sans-serif ;
+	text-transform: uppercase;
+	color: #3b434c;
+}
+
+ul.team li p{
+	font-size: 14px;
+	font-family: Regular,sans-serif;
+	color: #3b434c;
+}
+
+ul.social-net{
+	margin: 25px auto;
+}
+
+.ava{
+	 position: relative;
+	 height: 320px;
+}
+
+.ava a{
+	width: 236px;
+	height: 283px;
+}
+
+.social-net li {
+	display: inline-block;
+	margin: 0 5px;
+	width: 26px;
+	/*height: 26px;*/
+	background: url("../images/social-media-icons.png") no-repeat ;
+}
+
+.social-net li a{
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+
+li.face{
+	background-position: 0;
+}
+
+li.tw{
+	background-position: -38px 0;
+}
+li.google{
+	background-position: -76px 0;
+}
+
+.dots {
+	display: inline-block;
+	margin-bottom: 100px;
+	height: 20px;
+}
+
+.dots p{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 9px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: #c4c6c9;
+}
+
+.dots p:hover {
+	transition: 0.2s all ease-out;
+	transform:scale(1.3);
+	background-color: #f7600e;
+}
+
+/*.................Say hello............*/
+
+section.hello{
+	position: relative;
+	background: url("../images/hello-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+.hello header{
+	padding-top: 100px;
+}
+.hello header h2{
+	font-size: 30px;
+	font-family: SemiBold,sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+.hello header p {
+	max-width: 470px;
+	margin: 0 auto ;
+	font-size: 15px;
+	font-family: Regular,sans-serif;
+	line-height: 20px;
+	color: #fff;
+}
+
+.hello form.say-hello{
+	display: inline-block;
+	margin: 100px 0 0 0;
+	overflow: hidden;
+	width: 830px;
+}
+
+.hello .say-hello input{
+	display: inline-block;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	height: 50px;
+	width: 400px;
+	font-size: 16px;
+	font-family: SemiBold,sans-serif;
+	border: 3px solid transparent;
+	border-radius: 10px;
+}
+
+.hello .say-hello input:focus{
+	border: 3px solid #f7600e;
+}
+
+.hello .say-hello textarea:focus{
+	 border: 3px solid #f7600e;
+ }
+
+.hello .say-hello textarea{
+	display: inline-block;
+	width: 830px;
+	height: 200px;
+	font-size: 16px;
+	font-family: SemiBold,sans-serif;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: 3px solid transparent;
+	border-radius: 10px;
+	resize: none;
+}
+
+.button-icons{
+	overflow: hidden;
+	width: 830px;
+	margin: 0 auto;
+}
+
+.hello button{
+	 float: left;
+	 margin-top: 30px;
+	 background: transparent;
+ }
+
+.hello .say-hello button:hover{
+	background: #f7600e;
+}
+
+.hello .social-icons{
+	margin-top: 35px;
+	float: right;
+	overflow: hidden;
+}
+
+.hello .social-icons li a{
+	display: block;
+	width: 43px;
+	height: 43px;
+}
+
+.hello .social-icons li{
+	float: left;
+	margin-left: 20px;
+	width: 44px;
+	height: 44px;
+	background: url("../images/social-icons.png") no-repeat ;
+}
+
+.hello .social-icons .fb{
+	 background-position: 0;
+}
+
+.hello .social-icons .twit{
+	background-position: -63px 0;
+}
+
+.hello .social-icons .gplus{
+	background-position: -126px 0;
+}
+
+.hello .social-icons .ball{
+	background-position: -189px 0;
+}
+
+.hello .social-icons .be{
+	background-position: -252px 0;
+}
+
+/*.................Footer............*/
+
+footer{
+	background-color: #3b434c;
+}
+
+footer p,address{
+	display: inline;
+	font-size: 16px;
+	font-family: Regular,sans-serif;
+	font-style: normal;
+	margin: 25px 0;
+	text-transform: uppercase;
+	color: #fff;
+	vertical-align: middle;
+}
+
+footer address a img{
+	padding-left: 10px;
+	display: inline;
+	vertical-align: middle;
+}
